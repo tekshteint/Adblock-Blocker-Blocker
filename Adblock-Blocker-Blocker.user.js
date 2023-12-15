@@ -5,6 +5,8 @@
 // @description  Block those pesky adblock blockers!
 // @author       tekshteint
 // @icon         https://github.com/tekshteint/Adblock-Blocker-Blocker/blob/main/icon.png?raw=true
+// @updateURL    https://github.com/tekshteint/Adblock-Blocker-Blocker/raw/main/Adblock-Blocker-Blocker.user.js
+// @downloadURL  https://github.com/tekshteint/Adblock-Blocker-Blocker/raw/main/Adblock-Blocker-Blocker.user.js
 // @match http://*/*
 // @match https://*/*
 // ==/UserScript==
@@ -82,7 +84,7 @@
             return;
         }
 
-        const scriptUrl = '';
+        const scriptUrl = 'https://raw.githubusercontent.com/tekshteint/Adblock-Blocker-Blocker/main/Adblock-Blocker-Blocker.user.js';
 
         fetch(scriptUrl)
         .then(response => response.text())
