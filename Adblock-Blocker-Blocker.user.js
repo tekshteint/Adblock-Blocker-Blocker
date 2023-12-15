@@ -1,39 +1,65 @@
 // ==UserScript==
 // @name         Adblock Blocker Blocker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Block those pesky adblock blockers!
 // @author       tekshteint
 // @icon         https://github.com/tekshteint/Adblock-Blocker-Blocker/blob/main/icon.png?raw=true
+// @match http://*/*
+// @match https://*/*
 // ==/UserScript==
 
 (function() {
     'use strict';
 
     // Checks for updates
-    const updateCheck = false;
+    const updateCheck = true;
 
     // Enable debug messages into the console
-    const debugMessages = true;
+    const debugMessages = false;
 
     // Varables used for updater
     let hasIgnoredUpdate = false;
 
     if (updateCheck) checkUpdate();
+    
+    // Observer configuration
+    const observerConfig = {
+        childList: true, // Watch for changes in the children of the target node
+        subtree: true   // Watch for changes in the entire subtree
+    };
+
+    // Handle mutations in DOM and recall
+    function handleMutations(mutationsList, observer) {
+        murderBlockers();
+    }
+
+    // Create a MutationObserver with the callback and configuration
+    const observer = new MutationObserver(handleMutations);
+
+    // Start observing document
+    observer.observe(document, observerConfig);
 
 
     function murderBlockers(){
+        //Allow scrolling after nuking adblock blocker
+        document.documentElement.style.overflow = '';
+        document.body.style.cssText = "visible !important";
+
         // Adblock blocker div class names
         const divClasses = [];
         const divIDs = [];
-        divClasses.push("dgEhJe6g", " fEy1Z2XT  ",)
+        divClasses.push("dgEhJe6g", "fEy1Z2XT",)
         divIDs.push("anuUDQLF",)
 
-        // Remove divs based on class names
+         // Remove divs based on class names
         divClasses.forEach(function(className){
             var elements = document.querySelectorAll('.' + className);
             elements.forEach(function(element){
                 element.remove();
+                if (debugMessages){
+                    console.log("ABN: Deleted Class " + className)
+                }
             })
         })
 
@@ -42,6 +68,9 @@
             var elements = document.querySelectorAll('#' + idName);
             elements.forEach(function(element){
                 element.remove();
+                if (debugMessages){
+                    console.log("ABN: Deleted ID " + idName)
+                }
             })
         })
 
@@ -86,10 +115,5 @@
         });
         hasIgnoredUpdate = true;
     }
-
-
-
-
-
 
 })();
