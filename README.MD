@@ -22,7 +22,7 @@ This repository contains a userscript designed to nuke annoying adblock blockers
    - [Tampermonkey for Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
 2. **Install the Script**:
-   [Click Here and Press Install](Adblock-Blocker-Blocker.js?raw=True).
+   [Click Here and Press Install](Adblock-Blocker-Blocker.user.js?raw=True).
 
 3. **Enable the Script**:
    Enable the script by clicking the switch next to the script name in the Tampermonkey Dashboard.
