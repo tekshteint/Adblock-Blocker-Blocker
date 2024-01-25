@@ -14,18 +14,18 @@ This repository contains a userscript designed to nuke annoying adblock blockers
 
 ## Installation
 
-1. **Install Tampermonkey**:
-   If you haven't already, install Tampermonkey.
-   - [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-   - [Tampermonkey for Opera/OperaGX](https://addons.opera.com/en-gb/extensions/details/tampermonkey-beta/)
-   - [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
-   - [Tampermonkey for Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
+1. **Install a User Script Manager**:
+   If you haven't already, install ViolentMonkey - an open source version of TamperMonkey.
+   - [ViolentMonkey's Official Website](https://violentmonkey.github.io/)
+   - [ViolentMonkey for Chromeium based browsers](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+   - [ViolentMonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
+   - [ViolentMonkey for Edge](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao)
 
 2. **Install the Script**:
    [Click Here and Press Install](Adblock-Blocker-Blocker.user.js?raw=True).
 
 3. **Enable the Script**:
-   Enable the script by clicking the switch next to the script name in the Tampermonkey Dashboard.
+   Enable the script by clicking the switch next to the script name in the ViolentMonkey Dashboard.
 
 ## Usage
 
