@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Adblock Blocker Blocker
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Block those pesky adblock blockers!
 // @author       tekshteint
 // @icon         https://github.com/tekshteint/Adblock-Blocker-Blocker/blob/main/icon.png?raw=true
@@ -51,7 +51,7 @@
         // Adblock blocker div class names
         const divClasses = [];
         const divIDs = [];
-        divClasses.push("dgEhJe6g", "fEy1Z2XT, bOvWNQ")
+        divClasses.push("dgEhJe6g", "fEy1Z2XT", "bOvWNQ", "dgEhJe6g", "fEy1Z2XT")
         divIDs.push("anuUDQLF","ignielAdBlock")
 
          // Remove divs based on class names
