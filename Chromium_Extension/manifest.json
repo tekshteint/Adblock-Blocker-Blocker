@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Adblock Blocker Blocker",
+    "version": "0.4",
+    "description": "Block those pesky adblock blockers!",
+    "author": "tekshteint",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action":{
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "updater.js"
+        ]
+    },
+    "web_accessible_resources": [
+        "content.js"
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "update_url": "https://github.com/tekshteint/Adblock-Blocker-Blocker/raw/main/Adblock-Blocker-Blocker.user.js"
+}
