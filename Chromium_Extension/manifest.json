@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Adblock Blocker Blocker",
-    "version": "0.4",
+    "version": "0.5",
     "description": "Block those pesky adblock blockers!",
     "author": "tekshteint",
     "icons": {
@@ -33,6 +33,5 @@
     ],
     "permissions": [
         "activeTab"
-    ],
-    "update_url": "https://github.com/tekshteint/Adblock-Blocker-Blocker/raw/main/Adblock-Blocker-Blocker.user.js"
+    ]
 }
