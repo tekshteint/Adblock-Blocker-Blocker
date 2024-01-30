@@ -4,9 +4,9 @@
 
 ## Introduction
 
-This repository contains a userscript designed to nuke annoying adblock blockers that are becoming more and more prevalent throrughout the web.
+This repository contains a userscript designed to nuke annoying adblock blockers that are becoming more and more prevalent throughout  the web.
 
-As adblocking and tracker blocking are become more and more of a neccessity for everyday use online, combating these anti-adblockers which are more of an invation of privacy with data collection than revenue collection are also becoming a vital part of online life.
+As adblocking and tracker blocking are become more and more of a necessity for everyday use online, combating these anti-adblockers which are more of an invasion of privacy with data collection than revenue collection are also becoming a vital part of online life.
 
 Follow the instructions below to get started.
 
