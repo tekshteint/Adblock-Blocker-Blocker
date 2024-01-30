@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Adblock Blocker Blocker
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Block those pesky adblock blockers!
 // @author       tekshteint
 // @icon         https://github.com/tekshteint/Adblock-Blocker-Blocker/blob/main/icon.png?raw=true
