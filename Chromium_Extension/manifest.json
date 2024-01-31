@@ -1,37 +1,43 @@
 {
-    "manifest_version": 2,
-    "name": "Adblock Blocker Blocker",
-    "version": "0.5",
-    "description": "Block those pesky adblock blockers!",
-    "author": "tekshteint",
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-    },
-    "browser_action":{
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "js": [
-                "content.js"
-            ]
-        }
-    ],
-    "background": {
-        "scripts": [
-            "updater.js"
-        ]
-    },
-    "web_accessible_resources": [
+  "manifest_version": 3,
+  "name": "Adblock Blocker Blocker",
+  "version": "0.5",
+  "description": "Block those pesky adblock blockers!",
+  "author": "tekshteint",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
         "content.js"
-    ],
-    "permissions": [
-        "activeTab"
-    ]
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {}
 }
